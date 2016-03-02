@@ -14,6 +14,7 @@ import java.util.ArrayList;
 
 /**
  * Created by admin on 3/1/2016.
+ * Main Activity
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -40,7 +41,10 @@ public class MainActivity extends AppCompatActivity {
     private void initVars() {
         photo = (ImageView) findViewById(R.id.image_view_photo);
         Glide.with(this).load("http://goo.gl/gEgYUd").into(photo);
+
+        // Testing loading array
         textViewContent = (TextView) findViewById(R.id.text_view_content);
+
     }
 
     public void goLogin(View view) {
